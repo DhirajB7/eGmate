@@ -1,3 +1,75 @@
-body{
-    color: crimson;
+#scrollUi{
+    margin: auto;
+    width: 70%;
+    margin-top: 2%;
+}
+
+#quantName{
+    margin-right: 10%;
+}
+
+#verbalName{
+    margin-left: 10%;
+}
+
+.name{
+    font-size: x-large;
+}
+
+#submitButton{
+    margin-top: 2%;
+    margin-left: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.qvname{
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.box{
+    font-size: 60%;
+} 
+
+#totalGraphUi{
+    background-color:#e6e6fa;
+    margin: auto;
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#twoGraphUi{
+    margin: auto;
+    width: 70%;
+    margin-top: 4%;
+    
+}
+
+#totalGraphUi div,#twoGraphUi div{
+    margin-bottom: 2%;
+}
+
+#quantGraphUi{
+    float:left;  
+    width:45%; 
+    border-right: 2px solid #e6e6fa;
+    padding-right: 4%;
+}
+
+#verbalGraphUi{
+    float:right; 
+    width:45%;
+    padding-left: 4%;
 }

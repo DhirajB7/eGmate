@@ -6,8 +6,57 @@
     <link rel="stylesheet" href="eGmat.css">
 </head>
 <body>
-    <h1>I AM DHIRAJ...THE RAJ</h1>
-    <h2>Testing</h2>
+    <div id="scrollUi">
+
+        <div class="qvname" id="quantName">
+
+            <span class="name">Quant</span>
+            <br>
+            <span class = "inputName">Current</span><input class = "box" type="number" name="current" id="quantCurrent">
+
+            <span class = "inputName">Target</span><input class = "box" type="number" name="target" id="quantTarget">
+
+        </div>
+
+        <div class="qvname" id="verbalName">
+
+            <span class="name">Verbal</span>
+            <br>
+            <span class = "inputName">Current</span><input class = "box" type="number" name="current" id="verbalCurrent">
+
+            <span class = "inputName">Target</span><input class = "box" type="number" name="target" id="verbalTarget">
+
+        </div>
+        <br>
+        <button id="submitButton">Submit and Refresh</button>
+    </div>
+
+    <div id="totalGraphUi">
+       <div><span class="name">Total Score</span></div>
+       <div><span class="name scoreHolder">620</span></div>
+       <div>GRAPH COMES HERE</div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est vitae amet debitis corporis nulla reiciendis deleniti placeat, optio corrupti molestias alias consectetur cupiditate ut quos labore eligendi quas eveniet!<span></span></div>
+    </div>
+
+    <div id="twoGraphUi">
+
+        <div id = "quantGraphUi" >
+        <div><span class="nameMedium">Total Score</span></div>
+       <div><span class="name quantScoreHolder">Q32</span></div>
+       <div>GRAPH COMES HERE</div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est vitae amet debitis corporis nulla reiciendis deleniti placeat, optio corrupti molestias alias consectetur cupiditate ut quos labore eligendi quas eveniet!</div>
+        </div>
+
+        <div id = "verbalGraphUi" >
+                <div><span class="nameMedium">Total Score</span></div>
+               <div><span class="name verbalScoreHolder">V42</span></div>
+               <div>GRAPH COMES HERE</div>
+               <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est vitae amet debitis corporis nulla reiciendis deleniti placeat, optio corrupti molestias alias consectetur cupiditate ut quos labore eligendi quas eveniet!</div>
+
+        </div>
+        
+    </div>
+
    <script src="eGmat.js"></script>
 </body>
 </html>
