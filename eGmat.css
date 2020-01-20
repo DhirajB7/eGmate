@@ -1,3 +1,99 @@
-body{
-    color: crimson;
+#scrollUi{
+    margin: auto;
+    width: 70%;
+    margin-top: 2%;
+}
+
+#quantName{
+    margin-right: 10%;
+}
+
+#verbalName{
+    margin-left: 10%;
+}
+
+.name{
+    font-size: x-large;
+}
+
+#submitButton{
+    margin-top: 2%;
+    margin-left: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #0fa2eb;
+    color: #ffffff;
+}
+
+.qvname{
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.box{
+    font-size: 60%;
+} 
+
+#totalGraphUi{
+    background-color:#e6e6fa;
+    margin: auto;
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#twoGraphUi{
+    margin: auto;
+    width: 70%;
+    margin-top: 4%;
+    
+}
+
+#totalGraphUi div,#twoGraphUi div,#scrollUi div{
+    margin-bottom: 2%;
+}
+
+#quantGraphUi{
+    float:left;  
+    width:45%; 
+    border-right: 2px solid #e6e6fa;
+    padding-right: 4%;
+}
+
+#verbalGraphUi{
+    float:right; 
+    width:45%;
+    padding-left: 4%;
+}
+
+.meter,.meterQuant,.meterVerbal { 
+	height: 20px;  /* Can be anything */
+    background:#f5f5f5;
+}
+
+.meter > span:nth-child(1),.meterQuant > span:nth-child(1),.meterVerbal > span:nth-child(1) {
+  display: inline-block;
+  height: 100%;
+  background-color:#0fa2eb;
+  width:10%;
+  text-align: center;
+  float:left;
+  
+}
+.meter > span:nth-child(2),.meterQuant > span:nth-child(2),.meterVerbal > span:nth-child(2) {
+  display: inline-block;
+  height: 100%;
+  background-color: #ffe28a;
+  text-align: center;
+  width:10%
 }

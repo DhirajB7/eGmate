@@ -6,8 +6,64 @@
     <link rel="stylesheet" href="eGmat.css">
 </head>
 <body>
-    <h1>I AM DHIRAJ...THE RAJ</h1>
-    <h2>Testing</h2>
+    <div id="scrollUi">
+
+        <div class="qvname" id="quantName">
+
+            <div><span class="name">Quant</span></div>
+            <br>
+            <span class = "inputName">Current</span><input class = "box" type="number" name="current" id="quantCurrent">
+
+            <span class = "inputName">Target</span><input class = "box" type="number" name="target" id="quantTarget">
+
+        </div>
+
+        <div class="qvname" id="verbalName">
+
+            <div><span class="name">Verbal</span></div>
+            <br>
+            <span class = "inputName">Current</span><input class = "box" type="number" name="current" id="verbalCurrent">
+
+            <span class = "inputName">Target</span><input class = "box" type="number" name="target" id="verbalTarget">
+
+        </div>
+        <br>
+        <button id="submitButton">Submit and Refresh</button>
+    </div>
+
+    <div id = "graphUi">
+        <div id="totalGraphUi">
+            <div><span class="name">Total Score</span></div>
+            <div><span id="totalScoreHolder" class="name"></span></div>
+            <div class="meter">
+            <span id="totalCurrentScore"></span>
+             <span id="totalDifferenceScore"></span>
+          </div>
+          <div id="totalMessage">QUANT MESSAGE COMES HERE</div>
+        </div>
+
+        <div id="twoGraphUi">
+            <div id = "quantGraphUi" >
+                <div><span class="nameMedium">Total Score</span></div>
+                 <div><span id="quantScoreHolder" class="name"></span></div>
+                <div class="meterQuant">
+                 <span id="currentQuantScore"></span>
+                <span id="differenceQuantScore"></span>
+                </div>
+                <div id="quantMessage">QUANT MESSAGE COMES HERE</div>
+            </div>
+
+            <div id = "verbalGraphUi" >
+                    <div><span class="nameMedium">Total Score</span></div>
+                    <div><span id = "verbalScoreHolder" class="name"></span></div>
+                    <div class="meterVerbal">
+                     <span id="currentVerbalScore"></span>
+                     <span id="differenceVerbalScore"></span>
+                    </div>
+                    <div id="verbalMessage">Verbal MESSAGE COMES HERE</div>
+            </div>
+    </div>
+    </div>
    <script src="eGmat.js"></script>
 </body>
 </html>
