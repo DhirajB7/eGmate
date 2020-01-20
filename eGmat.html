@@ -34,33 +34,33 @@
     <div id = "graphUi">
         <div id="totalGraphUi">
             <div><span class="name">Total Score</span></div>
-            <div><span class="name scoreHolder">620</span></div>
+            <div><span id="totalScoreHolder" class="name"></span></div>
             <div class="meter">
-            <span>30</span>
-             <span>10</span>
+            <span id="totalCurrentScore"></span>
+             <span id="totalDifferenceScore"></span>
           </div>
-            <div>Your estimated GMAT score as per your performance in this mock test is <span>620</span>,which is <strong><span>100</span> points</strong> lower than your target GMAT score of <span>720</span>.</div>
+          <div id="totalMessage">QUANT MESSAGE COMES HERE</div>
         </div>
 
         <div id="twoGraphUi">
             <div id = "quantGraphUi" >
                 <div><span class="nameMedium">Total Score</span></div>
-                 <div><span class="name quantScoreHolder">Q32</span></div>
+                 <div><span id="quantScoreHolder" class="name"></span></div>
                 <div class="meterQuant">
-                 <span>30</span>
-                <span>10</span>
+                 <span id="currentQuantScore"></span>
+                <span id="differenceQuantScore"></span>
                 </div>
-                <div>Your estimated quantitative score as per your performance in this mock test is <span>Q42</span>,which is <strong><span>+6</span> points</strong> lower than your target quantitative score of <span>Q42</span>.</div>
+                <div id="quantMessage">QUANT MESSAGE COMES HERE</div>
             </div>
 
             <div id = "verbalGraphUi" >
                     <div><span class="nameMedium">Total Score</span></div>
-                    <div><span class="name verbalScoreHolder">V42</span></div>
+                    <div><span id = "verbalScoreHolder" class="name"></span></div>
                     <div class="meterVerbal">
-                     <span>30</span>
-                     <span>10</span>
+                     <span id="currentVerbalScore"></span>
+                     <span id="differenceVerbalScore"></span>
                     </div>
-                    <div>Your estimated verbal score as per your performance in this mock test is <span>V42</span>,which is <strong><span>+6</span> points</strong> lower than your target verbal score of <span>V42</span>.</div>
+                    <div id="verbalMessage">Verbal MESSAGE COMES HERE</div>
             </div>
     </div>
     </div>
