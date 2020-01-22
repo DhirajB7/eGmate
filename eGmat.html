@@ -9,7 +9,6 @@
     <div id="scrollUi">
 
         <div class="qvname" id="quantName">
-
             <div><span class="name">Quant</span></div>
             <br>
             <span class = "inputName">Current</span><input class = "box" type="number" name="current" id="quantCurrent">
@@ -35,17 +34,37 @@
         <div id="totalGraphUi">
             <div><span class="name">Total Score</span></div>
             <div><span id="totalScoreHolder" class="name"></span></div>
+            <div id="totalIndicatorCurrent">
+                <span id = "totalCurrentScoreAboveArrow"></span>
+                <br>
+                <span id="totalCurrentScoreArrow">&#9662;</span>
+            </div>
+            <div id="totalIndicatorTarget">
+                <span id = "totalTargetScoreAboveArrow"></span>
+                <br>
+                <span id="totalTargetScoreArrow">&#9662;</span>
+            </div>
             <div class="meter">
             <span id="totalCurrentScore"></span>
              <span id="totalDifferenceScore"></span>
           </div>
-          <div id="totalMessage">QUANT MESSAGE COMES HERE</div>
+          <div id="totalMessage">TOTAL MESSAGE COMES HERE</div>
         </div>
 
         <div id="twoGraphUi">
             <div id = "quantGraphUi" >
                 <div><span class="nameMedium">Total Score</span></div>
                  <div><span id="quantScoreHolder" class="name"></span></div>
+                 <div id="quantIndicatorCurrent">
+                    <span id = "quantCurrentScoreAboveArrow"></span>
+                    <br>
+                    <span id="quantCurrentScoreArrow">&#9662;</span>
+                </div>
+                <div id="quantIndicatorTarget">
+                    <span id = "quantTargetScoreAboveArrow"></span>
+                    <br>
+                    <span id="quantTargetScoreArrow">&#9662;</span>
+                </div>
                 <div class="meterQuant">
                  <span id="currentQuantScore"></span>
                 <span id="differenceQuantScore"></span>
@@ -56,6 +75,16 @@
             <div id = "verbalGraphUi" >
                     <div><span class="nameMedium">Total Score</span></div>
                     <div><span id = "verbalScoreHolder" class="name"></span></div>
+                    <div id="verbalIndicatorCurrent">
+                        <span id = "verbalCurrentScoreAboveArrow"></span>
+                        <br>
+                        <span id="verbalCurrentScoreArrow">&#9662;</span>
+                    </div>
+                    <div id="verbalIndicatorTarget">
+                        <span id = "verbalTargetScoreAboveArrow"></span>
+                        <br>
+                        <span id="verbalTargetScoreArrow">&#9662;</span>
+                    </div>
                     <div class="meterVerbal">
                      <span id="currentVerbalScore"></span>
                      <span id="differenceVerbalScore"></span>
