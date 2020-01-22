@@ -1,32 +1,43 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 #scrollUi{
-    margin: auto;
-    width: 70%;
+    margin: 0 auto 0 auto;
+    width: 80%;
     margin-top: 2%;
 }
 
-#quantName{
-    margin-right: 10%;
-}
-
-#verbalName{
-    margin-left: 10%;
+ #quantName{
+    margin-right: 8%; 
+    margin-left: 8%;
 }
 
 .name{
-    font-size: x-large;
+    font-size: xx-large;
+}
+
+.inputName{
+    font-size: large;
 }
 
 #submitButton{
-    margin-top: 2%;
-    margin-left: 40%;
-    padding-top: 1%;
-    padding-bottom: 1%;
     background-color: #0fa2eb;
-    color: #ffffff;
+	border-radius:28px;
+	border:1px solid #0fa2eb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:medium;
+    padding:1% 2% 1% 2%;
+    margin-left: 39%;
+    margin-top: 2%;
 }
 
 .qvname{
     display: inline-block;
+    width: 40%;
+
 }
 
 input::-webkit-outer-spin-button,
@@ -39,17 +50,19 @@ input[type=number] {
 }
 
 .box{
-    font-size: 60%;
+    font-size: larger;
+    width: 10%;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 10%;
+    border:1px solid #D0D0D0; 
 } 
 
 #totalGraphUi{
-    background-color:#e6e6fa;
+    background-color:#ECF0F1;
     margin: auto;
     margin-top: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 1% 15% 1% 15%;
 }
 
 #twoGraphUi{
@@ -192,21 +205,45 @@ input[type=number] {
 .meter,.meterQuant,.meterVerbal { 
 	height: 20px;  
     background:#f5f5f5;
+<<<<<<< HEAD
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+=======
+>>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
 }
 
 .meter > span:nth-child(1),.meterQuant > span:nth-child(1),.meterVerbal > span:nth-child(1) {
   display: inline-block;
   height: 100%;
   background-color:#0fa2eb;
+<<<<<<< HEAD
+  text-align: center;
+  float:left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+=======
   width:30%;
   text-align: center;
   float:left;
+>>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
   
 }
 .meter > span:nth-child(2),.meterQuant > span:nth-child(2),.meterVerbal > span:nth-child(2) {
   display: inline-block;
   height: 100%;
+<<<<<<< HEAD
+  position: relative;
+  text-align: center;
+  left:-9px;
+  border-radius: 0px 10px 10px 0px;
+  background-image:radial-gradient(circle at LEFT, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 9px,#ffe28a 1px)
+}
+
+.grayText{
+    color: #85929E;
+=======
   background-color: #ffe28a;
   text-align: center;
   width:40%
+>>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
 }
