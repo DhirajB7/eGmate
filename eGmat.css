@@ -59,8 +59,8 @@ input[type=number] {
     
 }
 
-#totalGraphUi div,#twoGraphUi div,#scrollUi div{
-    margin-bottom: 2%;
+#totalGraphUi>div,#twoGraphUi div,#scrollUi div{
+    margin-bottom: 1%;
 }
 
 #quantGraphUi{
@@ -76,8 +76,121 @@ input[type=number] {
     padding-left: 4%;
 }
 
+/*====GRAPH ARROW AND DATA----START========*/
+/*TOTAL GRAPH*/
+
+#totalIndicatorCurrent{ /*fill by JS width*/
+    float:left;
+    display: inline-block;
+}
+
+#totalCurrentScoreAboveArrow{
+    position: relative;
+    right:-95%
+}
+
+#totalTargetScoreAboveArrow{
+    position: relative;
+    right:-90%
+}
+
+#totalCurrentScoreArrow{
+    color: #0fa2eb;
+    font-size: large;
+    position: relative;
+    right:-95%
+}
+
+#totalIndicatorTarget{ /*Fill By JS width*/
+    display: inline-block;
+}
+
+
+#totalTargetScoreArrow{
+    color: #ffe28a;
+    font-size: large;
+    position: relative;
+    right:-90%
+}
+
+
+/*QUANT GRAPH*/
+
+#quantIndicatorCurrent{ /*fill by JS width*/
+    float:left;
+    display: inline-block;
+}
+
+#quantCurrentScoreAboveArrow{
+    position: relative;
+    right:-95%
+}
+
+#quantTargetScoreAboveArrow{
+    position: relative;
+    right:-90%
+}
+
+#quantCurrentScoreArrow{
+    color: #0fa2eb;
+    font-size: large;
+    position: relative;
+    right:-95%
+}
+
+#quantIndicatorTarget{ /*Fill By JS width*/
+    display: inline-block;
+}
+
+
+#quantTargetScoreArrow{
+    color: #ffe28a;
+    font-size: large;
+    position: relative;
+    right:-90%
+}
+
+/*VERBAL GRAPH*/
+
+#verbalIndicatorCurrent{ /*fill by JS width*/
+    float:left;
+    display: inline-block;
+}
+
+#verbalCurrentScoreAboveArrow{
+    position: relative;
+    right:-95%
+}
+
+#verbalTargetScoreAboveArrow{
+    position: relative;
+    right:-90%
+}
+
+#verbalCurrentScoreArrow{
+    color: #0fa2eb;
+    font-size: large;
+    position: relative;
+    right:-95%
+}
+
+#verbalIndicatorTarget{ /*Fill By JS width*/
+    display: inline-block;
+}
+
+
+#verbalTargetScoreArrow{
+    color: #ffe28a;
+    font-size: large;
+    position: relative;
+    right:-90%
+}
+
+
+/*====GRAPH ARROW AND DATA----END========*/
+
 .meter,.meterQuant,.meterVerbal { 
-	height: 20px;  /* Can be anything */
+	height: 20px;  
     background:#f5f5f5;
 }
 
@@ -85,7 +198,7 @@ input[type=number] {
   display: inline-block;
   height: 100%;
   background-color:#0fa2eb;
-  width:10%;
+  width:30%;
   text-align: center;
   float:left;
   
@@ -95,5 +208,5 @@ input[type=number] {
   height: 100%;
   background-color: #ffe28a;
   text-align: center;
-  width:10%
+  width:40%
 }
