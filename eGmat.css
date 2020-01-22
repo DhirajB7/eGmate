@@ -205,33 +205,23 @@ input[type=number] {
 .meter,.meterQuant,.meterVerbal { 
 	height: 20px;  
     background:#f5f5f5;
-<<<<<<< HEAD
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-=======
->>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
 }
 
 .meter > span:nth-child(1),.meterQuant > span:nth-child(1),.meterVerbal > span:nth-child(1) {
   display: inline-block;
   height: 100%;
   background-color:#0fa2eb;
-<<<<<<< HEAD
   text-align: center;
   float:left;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-=======
-  width:30%;
-  text-align: center;
-  float:left;
->>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
   
 }
 .meter > span:nth-child(2),.meterQuant > span:nth-child(2),.meterVerbal > span:nth-child(2) {
   display: inline-block;
   height: 100%;
-<<<<<<< HEAD
   position: relative;
   text-align: center;
   left:-9px;
@@ -241,9 +231,4 @@ input[type=number] {
 
 .grayText{
     color: #85929E;
-=======
-  background-color: #ffe28a;
-  text-align: center;
-  width:40%
->>>>>>> 5e0efd3c4e12079e70c1a3f08f9bb2c60d9d2bfc
 }
