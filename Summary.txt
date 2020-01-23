@@ -1,0 +1,28 @@
+WebPage is divided into 2 sections.
+1) Score Section
+2) Graph Section
+
+Score Section
+==============
+* On First load only Score scetion is seen
+* 4 number vales are accepted
+* on click of 'submit and refresh' button, validation happens.
+* if Validation is false alert is presented with error , User should re enter values and click 'submit and refresh'
+* Once validations are correct,all 4 values are passed to Graph section and Graph UI will appear.
+
+Graph Section
+==============
+* Sub divided into 3 graph section.
+* Total graph,quant Graph and Verbal graph.
+* In Quant Graph, there is a progress bar,whose width is in %.
+* Example if Current score is 25 and Target score is 30, width is (score/max)*100 (max is 60 and score can be Current or Target)
+* These CSS width are Assigned by JS function.(graphSection)
+* Similar approcah is done for Verbal and Total Graph.
+* Indicator on Graph was Challenging,but used same width concept.
+* graphSection function is generic and accepts parameters.(Score and UI Elements)
+* one function 'graphSection' makes 3 diffrernt graph, provided with diffrerent parameters.
+* on submit of a button "scoreCalculator" function is called and it inturn calls "graphSection" trice for 3 graph.
+
+Other Information
+==================
+* open for learning, suggestion Kindly Provide Feedback as What all can be improved.
