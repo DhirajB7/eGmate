@@ -93,7 +93,6 @@ input[type=number] {
 /*TOTAL GRAPH*/
 
 #totalIndicatorCurrent{ /*fill by JS width*/
-    float:left;
     display: inline-block;
 }
 
@@ -107,9 +106,14 @@ input[type=number] {
     right:-90%
 }
 
+#totalTargetScoreAboveArrowBottom{
+    position: relative;
+    right:-95%
+}
+
 #totalCurrentScoreArrow{
     color: #0fa2eb;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-95%
 }
@@ -118,19 +122,29 @@ input[type=number] {
     display: inline-block;
 }
 
+#totalIndicatorTargetBottom{
+    display: inline-block;
+}
+
 
 #totalTargetScoreArrow{
     color: #ffe28a;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-90%
+}
+
+#totalTargetScoreArrowBottom{
+    color: #ffe28a;
+    font-size: small;
+    position: relative;
+    right:-95%
 }
 
 
 /*QUANT GRAPH*/
 
 #quantIndicatorCurrent{ /*fill by JS width*/
-    float:left;
     display: inline-block;
 }
 
@@ -144,9 +158,14 @@ input[type=number] {
     right:-90%
 }
 
+#quantTargetScoreAboveArrowBottom{
+    position: relative;
+    right:-95%
+}
+
 #quantCurrentScoreArrow{
     color: #0fa2eb;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-95%
 }
@@ -155,18 +174,27 @@ input[type=number] {
     display: inline-block;
 }
 
+#quantIndicatorTargetBottom{ /*Fill By JS width*/
+    display: inline-block;
+}
+
 
 #quantTargetScoreArrow{
     color: #ffe28a;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-90%
 }
 
+#quantTargetScoreArrowBottom{
+    color: #ffe28a;
+    font-size: small;
+    position: relative;
+    right:-95%
+}
 /*VERBAL GRAPH*/
 
 #verbalIndicatorCurrent{ /*fill by JS width*/
-    float:left;
     display: inline-block;
 }
 
@@ -180,9 +208,14 @@ input[type=number] {
     right:-90%
 }
 
+#verbalTargetScoreAboveArrowBottom{
+    position: relative;
+    right:-95%
+}
+
 #verbalCurrentScoreArrow{
     color: #0fa2eb;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-95%
 }
@@ -194,11 +227,17 @@ input[type=number] {
 
 #verbalTargetScoreArrow{
     color: #ffe28a;
-    font-size: large;
+    font-size: small;
     position: relative;
     right:-90%
 }
 
+#verbalTargetScoreArrowBottom{
+    color: #ffe28a;
+    font-size: small;
+    position: relative;
+    right:-95%
+}
 
 /*====GRAPH ARROW AND DATA----END========*/
 
