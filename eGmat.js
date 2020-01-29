@@ -14,9 +14,12 @@ var totalScoreHolderElement = document.getElementById("totalScoreHolder")
 var totalCurrentScoreArrowMove = document.getElementById("totalIndicatorCurrent")
 var totalCurrentArrowHasValue = document.getElementById("totalCurrentScoreAboveArrow")
 var totalCurrentArrowElement = document.getElementById("totalCurrentScoreArrow")
-var totalTargetScoreArrowMove = document.getElementById("totalIndicatorTarget")
+var totalIndicatorTargetMove = document.getElementById("totalIndicatorTarget")
+var totalIndicatorTargetMoveBottom = document.getElementById("totalIndicatorTargetBottom")
 var totalTargetArrowHasValue = document.getElementById("totalTargetScoreAboveArrow")
+var totalTargetArrowHasValueBottom = document.getElementById("totalTargetScoreAboveArrowBottom")
 var totalTargetArrowElement = document.getElementById("totalTargetScoreArrow")
+var totalTargetArrowElementBottom = document.getElementById("totalTargetScoreArrowBottom")
 var totalCurrentScoreGraphElement = document.querySelector(".meter>#totalCurrentScore")
 var totalDifferenceScoreGraphElement = document.querySelector(".meter>#totalDifferenceScore")
 var differenceTotalScoreElement = document.querySelector("#totalDifferenceScore")
@@ -28,8 +31,11 @@ var quantCurrentScoreArrowMove = document.getElementById("quantIndicatorCurrent"
 var quantCurrentArrowHasValue = document.getElementById("quantCurrentScoreAboveArrow")
 var quantCurrentArrowElement = document.getElementById("quantCurrentScoreArrow")
 var quantTargetScoreArrowMove = document.getElementById("quantIndicatorTarget")
+var quantTargetScoreArrowMoveBottom = document.getElementById("quantIndicatorTargetBottom")
 var quantTargetArrowHasValue = document.getElementById("quantTargetScoreAboveArrow")
+var quantTargetArrowHasValueBottom = document.getElementById("quantTargetScoreAboveArrowBottom")
 var quantTargetArrowElement = document.getElementById("quantTargetScoreArrow")
+var quantTargetArrowElementBottom = document.getElementById("quantTargetScoreArrowBottom")
 var quantCurrentScoreGraphElement = document.querySelector(".meterQuant>#currentQuantScore")
 var quantDifferenceScoreGraphElement = document.querySelector(".meterQuant>#differenceQuantScore")
 var differenceQuantScoreElement = document.querySelector("#differenceQuantScore")
@@ -41,8 +47,11 @@ var verbalCurrentScoreArrowMove = document.getElementById("verbalIndicatorCurren
 var verbalCurrentArrowHasValue = document.getElementById("verbalCurrentScoreAboveArrow")
 var verbalCurrentArrowElement = document.getElementById("verbalCurrentScoreArrow")
 var verbalTargetScoreArrowMove = document.getElementById("verbalIndicatorTarget")
+var verbalTargetScoreArrowMoveBottom = document.getElementById("verbalIndicatorTargetBottom")
 var verbalTargetArrowHasValue = document.getElementById("verbalTargetScoreAboveArrow")
+var verbalTargetArrowHasValueBottom = document.getElementById("verbalTargetScoreAboveArrowBottom")
 var verbalTargetArrowElement = document.getElementById("verbalTargetScoreArrow")
+var verbalTargetArrowElementBottom = document.getElementById("verbalTargetScoreArrowBottom")
 var verbalCurrentScoreGraphElement = document.querySelector(".meterVerbal>#currentVerbalScore")
 var verbalDifferenceScoreGraphElement = document.querySelector(".meterVerbal>#differenceVerbalScore")
 var differenceVerbalScoreElement = document.querySelector("#differenceVerbalScore")
@@ -90,9 +99,9 @@ function scoreCalculator() {
  graphTotalCurrentScore= 200 +(parseInt(graphCurrentQuantScore)+parseInt(graphCurrentVerbalScore))*5
  graphTotalTargetScore= 200 +(parseInt(graphTargetQuantScore)+parseInt(graphTargetVerbalScore))*5
 
- graphSection(graphTotalCurrentScore,graphTotalTargetScore,totalScoreHolderElement,totalCurrentScoreArrowMove,totalCurrentArrowHasValue,totalCurrentArrowElement,totalTargetScoreArrowMove,totalTargetArrowHasValue,totalTargetArrowElement,totalCurrentScoreGraphElement,totalDifferenceScoreGraphElement,differenceTotalScoreElement,totalSectionMessageHolder,"","GMAT","totalGraph")
- graphSection(graphCurrentQuantScore,graphTargetQuantScore,quantScoreHolderElement,quantCurrentScoreArrowMove,quantCurrentArrowHasValue,quantCurrentArrowElement,quantTargetScoreArrowMove,quantTargetArrowHasValue,quantTargetArrowElement,quantCurrentScoreGraphElement,quantDifferenceScoreGraphElement,differenceQuantScoreElement,quantSectionMessageHolder,"Q","quantitative","quantGraph")
- graphSection(graphCurrentVerbalScore,graphTargetVerbalScore,verbalScoreHolderElement,verbalCurrentScoreArrowMove,verbalCurrentArrowHasValue,verbalCurrentArrowElement,verbalTargetScoreArrowMove,verbalTargetArrowHasValue,verbalTargetArrowElement,verbalCurrentScoreGraphElement,verbalDifferenceScoreGraphElement,differenceVerbalScoreElement,verbalSectionMessageHolder,"V","verbal","verbalGraph")
+ graphSection(graphTotalCurrentScore,graphTotalTargetScore,totalScoreHolderElement,totalCurrentScoreArrowMove,totalCurrentArrowHasValue,totalCurrentArrowElement,totalIndicatorTargetMove,totalIndicatorTargetMoveBottom,totalTargetArrowHasValue,totalTargetArrowHasValueBottom,totalTargetArrowElement,totalTargetArrowElementBottom,totalCurrentScoreGraphElement,totalDifferenceScoreGraphElement,differenceTotalScoreElement,totalSectionMessageHolder,"","GMAT","totalGraph")
+ graphSection(graphCurrentQuantScore,graphTargetQuantScore,quantScoreHolderElement,quantCurrentScoreArrowMove,quantCurrentArrowHasValue,quantCurrentArrowElement,quantTargetScoreArrowMove,quantTargetScoreArrowMoveBottom,quantTargetArrowHasValue,quantTargetArrowHasValueBottom,quantTargetArrowElement,quantTargetArrowElementBottom,quantCurrentScoreGraphElement,quantDifferenceScoreGraphElement,differenceQuantScoreElement,quantSectionMessageHolder,"Q","quantitative","quantGraph")
+ graphSection(graphCurrentVerbalScore,graphTargetVerbalScore,verbalScoreHolderElement,verbalCurrentScoreArrowMove,verbalCurrentArrowHasValue,verbalCurrentArrowElement,verbalTargetScoreArrowMove,verbalTargetScoreArrowMoveBottom,verbalTargetArrowHasValue,verbalTargetArrowHasValueBottom,verbalTargetArrowElement,verbalTargetArrowElementBottom,verbalCurrentScoreGraphElement,verbalDifferenceScoreGraphElement,differenceVerbalScoreElement,verbalSectionMessageHolder,"V","verbal","verbalGraph")
 
 }
 ////////////////
@@ -117,22 +126,19 @@ submitAndRefreshButton.addEventListener("click",()=>{
 ////////////////
 //--FUNCTION--GRAPH SECTION--//
 
-function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,currentScoreArrowValue,currentArrow,targetScoreArrow,targetScoreArrowValue,targetArrow,currentGraphElement,differenceGraphElement,differenceScoreElement,messageHolderElement,sectionIdentifier,sectionName,flag) {
+function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,currentScoreArrowValue,currentArrow,targetScoreArrow,targetScoreArrowBottom,targetScoreArrowValue,targetScoreArrowValueBottom,targetArrow,targetArrowBottom,currentGraphElement,differenceGraphElement,differenceScoreElement,messageHolderElement,sectionIdentifier,sectionName,flag) {
    var cntScr = parseInt(qCntScore)
    var tgtScr = parseInt(qTgtScore)
    var sId = sectionIdentifier.toString()
    var sName = sectionName.toString()
    var dinominator = 1
-   var hideColor=""
 
    scoreHolderElement.innerText = sId+cntScr.toString()
 
    if (flag==="totalGraph"){
     dinominator = 800
-    hideColor="#e6e6fa"
    }else{
     dinominator = 60
-    hideColor="white"
    }
 
    if(cntScr<tgtScr){
@@ -147,6 +153,16 @@ function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,c
     differenceGraphElement.style.width = percentAgeValueTarget.toString()+"%"
     targetScoreArrow.style.width = percentAgeValueTarget.toString()+"%"
     targetScoreArrowValue.innerText=sId+tgtScr.toString()
+    targetScoreArrowBottom.style.width = (Math.round((tgtScr/dinominator)*100)).toString()+"%"
+    targetScoreArrowValueBottom.innerText=sId+tgtScr.toString()
+
+    if(parseInt(tgtScr)-parseInt(cntScr)<=10){
+        targetScoreArrow.style.visibility="hidden"
+
+    }else{
+        targetScoreArrowBottom.style.visibility="hidden"
+
+    }
 
     var message = "Your estimated "+sName+" score as per your performance in this mock test is "+sId+cntScr.toString()+",which is <strong>"+(tgtScr-cntScr).toString()+" points</strong> lower than your target "+sName+" score of "+sId+tgtScr.toString()+"."
 
@@ -159,7 +175,10 @@ function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,c
     differenceGraphElement.style.width="0%"
     targetScoreArrow.style.width="0%"
     targetScoreArrowValue.innerText=""
-    targetArrow.style.color=hideColor
+    targetScoreArrowBottom.style.width=percentAgeValue.toString()+"%"
+    targetScoreArrowValueBottom.innerText=sId+tgtScr.toString()
+    targetScoreArrow.style.visibility="hidden"
+
 
     var message = "Your estimated "+sName+" score as per your performance in this mock test is "+sId+cntScr.toString()+",which is equal to your target "+sName+" score of "+sId+tgtScr.toString()+"."
 
@@ -176,10 +195,15 @@ function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,c
     targetScoreArrow.style.width = (percentAgeValue-percentAgeValueTarget).toString()+"%"
     targetScoreArrowValue.innerText=sId+cntScr.toString()
     targetArrow.style.color="#0fa2eb"
+    targetScoreArrowBottom.style.width = (percentAgeValue-percentAgeValueTarget).toString()+"%"
+    targetScoreArrowValueBottom.innerText=sId+cntScr.toString()
+    targetArrowBottom.style.color="#0fa2eb"
 
     currentScoreArrow.style.width = percentAgeValueTarget.toString()+"%"
     currentScoreArrowValue.innerText = sId+tgtScr.toString()
     currentArrow.style.color="#ffe28a"
+
+    targetScoreArrowBottom.style.visibility="hidden"
 
     var message = "Your estimated "+sName+" score as per your performance in this mock test is "+sId+cntScr.toString()+",which is <strong>"+(cntScr-tgtScr).toString()+" points</strong> heigher than your target "+sName+" score of "+sId+tgtScr.toString()+"."
 
@@ -190,12 +214,12 @@ function graphSection(qCntScore,qTgtScore,scoreHolderElement,currentScoreArrow,c
 }
 
 function undoChanges() {
-    totalCurrentArrowElement.style.color="#0fa2eb"
-    totalTargetArrowElement.style.color="#ffe28a"
-    quantCurrentArrowElement.style.color="#0fa2eb"
-    quantTargetArrowElement.style.color="#ffe28a"
-    verbalCurrentArrowElement.style.color="#0fa2eb"
-    verbalTargetArrowElement.style.color="#ffe28a"
+    totalIndicatorTargetMove.style.visibility="visible"
+    totalIndicatorTargetMoveBottom.style.visibility="visible"
+    quantTargetScoreArrowMove.style.visibility="visible"
+    quantTargetScoreArrowMoveBottom.style.visibility="visible"
+    verbalTargetScoreArrowMove.style.visibility="visible"
+    verbalTargetScoreArrowMoveBottom.style.visibility="visible"
 }
 
 //////////////////////////////
