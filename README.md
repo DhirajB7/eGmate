@@ -1,6 +1,5 @@
-# eGmat
+# Gmat Score Analysis
 
-## FOR eGMAT - GMAT TRAINING COMPANY
 1. Takes Current Score and Target Score in Quant Section And Verbal Section.
 2. Produces 3 graph
 3. First graph : Overal Score , Target score with indications.
